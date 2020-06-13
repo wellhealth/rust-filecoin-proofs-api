@@ -18,3 +18,6 @@ version = "3.0.0"
 package = "filecoin-proofs"
 # git="https://github.com/szdengbw/filecoin-proofs.git"
 path="/home/dengbw/gopath/src/github.com/filecoin-project/rust-fil-proofs/filecoin-proofs"
+
+# filecoin-proofs-v1 = { package = "filecoin-proofs", version = "3.0.0" }
+#b0b84fc2d0cd3ae412847e800b6c38eccc362f18
