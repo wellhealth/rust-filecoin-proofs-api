@@ -1,6 +1,6 @@
 [package]
 name = "filecoin-proofs-api"
-version = "3.0.1-alpha.0"
+version = "4.0.1-alpha.0"
 description = "API to interact with the proofs system in Filecoin"
 authors = ["dignifiedquire <me@dignifiedquire.com>"]
 edition = "2018"
@@ -12,6 +12,7 @@ readme = "README.md"
 anyhow = "1.0.26"
 serde = "1.0.104"
 paired = "0.19.0"
+<<<<<<< HEAD
 
 [dependencies.filecoin-proofs-v1]
 version = "3.0.0"
@@ -19,5 +20,6 @@ package = "filecoin-proofs"
 # git="https://github.com/szdengbw/filecoin-proofs.git"
 path="/home/dengbw/gopath/src/github.com/filecoin-project/rust-fil-proofs/filecoin-proofs"
 
-# filecoin-proofs-v1 = { package = "filecoin-proofs", version = "3.0.0" }
-#b0b84fc2d0cd3ae412847e800b6c38eccc362f18
+
+# filecoin-proofs-v1 = { package = "filecoin-proofs", version = "4.0.0" }
+# b863301780791cbf529dadf08c713e0a97408833
