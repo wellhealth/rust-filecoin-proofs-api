@@ -12,11 +12,10 @@ readme = "README.md"
 anyhow = "1.0.26"
 serde = "1.0.104"
 paired = "0.20.0"
-<<<<<<< HEAD
 
 [dependencies.filecoin-proofs-v1]
-version = "5.0.0"
+version = "5.1.1"
 package = "filecoin-proofs"
 # git="https://github.com/szdengbw/filecoin-proofs.git"
-path="/root/gopath/src/github.com/filecoin-project/rust-fil-proofs/filecoin-proofs"
+path="/root/golang/gopath/src/github.com/filecoin-project/rust-fil-proofs/filecoin-proofs"
 #filecoin-proofs-v1 = { package = "filecoin-proofs", version = "5.1.1" }
