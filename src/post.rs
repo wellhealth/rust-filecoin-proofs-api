@@ -219,10 +219,12 @@ fn generate_window_post_inner<Tree: 'static + MerkleTreeTrait>(
             replica_path,
         } = info;
 
+        info!("{:?}/{:?}", cache_dir, replica_path);
         ensure!(
             registered_proof == &registered_proof_v1,
             "can only generate the same kind of PoSt"
         );
+
         let info_v1 = filecoin_proofs_v1::PrivateReplicaInfo::new(
             replica_path.clone(),
             *comm_r,
