@@ -12,6 +12,7 @@ readme = "README.md"
 anyhow = "1.0.26"
 serde = "1.0.104"
 paired = "0.20.0"
+log = "0.4.8"
 
 [dependencies.filecoin-proofs-v1]
 version = "5.1.1"
