@@ -4,6 +4,8 @@ use anyhow::{ensure, Result};
 use filecoin_proofs_v1::types::MerkleTreeTrait;
 use filecoin_proofs_v1::with_shape;
 
+use log::{info};
+
 use crate::{
     ChallengeSeed, PoStType, PrivateReplicaInfo, ProverId, PublicReplicaInfo, RegisteredPoStProof,
     SectorId, SnarkProof, Version,
