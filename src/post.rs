@@ -96,9 +96,19 @@ fn generate_winning_post_inner<Tree: 'static + MerkleTreeTrait>(
             replica_path.clone(),
             *comm_r,
             cache_dir.into(),
-        )?;
+        );
 
-        replicas_v1.push((*id, info_v1));
+
+        match info_v1 {
+            Ok(o) => {
+                replicas_v1.push((*id, o));
+            },
+            Err(e) => {
+                info!("api:start error {:?}, error cache_dir={:?}", e, cache_dir);
+                //Err(e)
+            }
+        }
+        //replicas_v1.push((*id, info_v1));
     }
 
     ensure!(!replicas_v1.is_empty(), "missing v1 replicas");
