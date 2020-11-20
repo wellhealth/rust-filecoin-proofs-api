@@ -7,19 +7,38 @@ and this project adheres to [Semantic Versioning](https://book.async.rs/overview
 
 ## [Unreleased]
 
-<<<<<<< HEAD
-## [5.0.0] - 2020-08-11
+## [5.4.1] - 2020-11-02
 
-- Upgrade filecoin_proofs dependency to v5.0.0 (v28 parameters)
-=======
+- Upgrade bellperson to required version [#48](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/48)
+
+## [5.4.0] - 2020-11-02
+
+- Upgrade filecoin_proofs dependency to v5.4.0
+- Add new v1_1 RegisteredSealProofs to increment porep_id [#47](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/47)
+
+## [5.3.0] - 2020-10-29
+
+- Upgrade filecoin_proofs dependency to v5.3.0
+- Integrate blst backend [#46](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/46)
+- Create SECURITY.md [#45](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/45)
+
+## [5.2.0] - 2020-09-28
+
+- Update rustc to 1.46.0 [#44](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/44)
+- Expose distributed PoSt API from proofs [#41](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/41)
+
+## [5.1.1] - 2020-09-08
+
+- Export storage proofs errors [#40](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/40)
+- Replace unwrap usage with expect [#39](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/39)
+
 ## [5.1.0] - 2020-08-13
 
-- Upgrade filecoin_proofs dependency to v5.1.1
+- Upgrade filecoin_proofs dependency to v5.1.1 [#38](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/38)
 
 ## [5.0.0] - 2020-08-11
 
 - Upgrade filecoin_proofs dependency to v5.0.0 (v28 parameters) [#37](https://github.com/filecoin-project/rust-filecoin-proofs-api/pull/37)
->>>>>>> b4ed8ef36a4ca8198e19215b6cf63cb148caee58
 
 ## [4.0.4] - 2020-07-28
 
@@ -59,12 +78,13 @@ and this project adheres to [Semantic Versioning](https://book.async.rs/overview
 
 - Initial stable release
 
-<<<<<<< HEAD
-[Unreleased]: https://github.com/filecoin-project/rust-filecoin-proofs-api/compare/v5.0.0...HEAD
-=======
-[Unreleased]: https://github.com/filecoin-project/rust-filecoin-proofs-api/compare/v5.1.0...HEAD
+[Unreleased]: https://github.com/filecoin-project/rust-filecoin-proofs-api/compare/v5.4.1...HEAD
+[5.4.1]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.4.1
+[5.4.0]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.4.0
+[5.3.0]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.3.0
+[5.2.0]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.2.0
+[5.1.1]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.1.1
 [5.1.0]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.1.0
->>>>>>> b4ed8ef36a4ca8198e19215b6cf63cb148caee58
 [5.0.0]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v5.0.0
 [4.0.4]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v4.0.4
 [4.0.3]: https://github.com/filecoin-project/rust-filecoin-proofs-api/tree/v4.0.3
