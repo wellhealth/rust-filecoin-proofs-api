@@ -16,9 +16,14 @@ serde = "1.0.104"
 log = "0.4.8"
 
 filecoin-proofs-v1 = { package = "filecoin-proofs", version = "5.4.0", default-features = false, features = ["gpu"] ,path="../rust-fil-proofs/filecoin-proofs"}
-bellperson = { version = "0.12", default-features = false, features = ["gpu"] }
+bellperson = { version = "0.12", default-features = false, features = ["gpu"] , path ="../my-bellman"}
 
 [features]
 default = ["pairing"]
 pairing = ["filecoin-proofs-v1/pairing", "bellperson/pairing"]
 blst = ["filecoin-proofs-v1/blst", "bellperson/blst"]
+
+[patch.crates-io]
+#bellperson = { git = "https://github.com/Krysme/bellperson" }
+bellperson = { path = "/home/gzhao/go/src/github.com/filecoin-project/my/my-bellman" }
+neptune = { path = "/home/gzhao/go/src/github.com/filecoin-project/my/my-neptune" }

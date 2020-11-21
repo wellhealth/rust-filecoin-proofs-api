@@ -329,7 +329,8 @@ pub fn generate_window_post_with_vanilla(
     prover_id: ProverId,
     vanilla_proofs: &[VanillaProofBytes],
 ) -> Result<Vec<(RegisteredPoStProof, SnarkProof)>> {
-    with_shape!(
+
+     with_shape!(
         u64::from(registered_post_proof_type.sector_size()),
         generate_window_post_with_vanilla_inner,
         registered_post_proof_type,

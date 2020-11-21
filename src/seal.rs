@@ -667,6 +667,7 @@ fn seal_commit_phase2_inner<Tree: 'static + MerkleTreeTrait>(
     phase1_output: SealCommitPhase1Output,
     prover_id: ProverId,
     sector_id: SectorId,
+    //gpu_index:usize
 ) -> Result<SealCommitPhase2Output> {
     let SealCommitPhase1Output {
         vanilla_proofs,
