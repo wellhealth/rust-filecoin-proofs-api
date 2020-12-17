@@ -16,6 +16,8 @@ serde = "1.0.104"
 rayon = "1.1.0"
 log = "0.4.8"
 
+third_party_stores = { package = "third_party_stores", path = "../rust-fil-proofs/third_party_stores"}
+
 filecoin-proofs-v1 = { package = "filecoin-proofs", version = "5.4.0", default-features = false, features = ["gpu"] ,path="../rust-fil-proofs/filecoin-proofs"}
 bellperson = { version = "0.12", default-features = false, features = ["gpu"] , path ="../my-bellman"}
 
